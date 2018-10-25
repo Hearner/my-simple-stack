@@ -23,7 +23,6 @@ public class SimpleStackImplTest {
         assertTrue("The stack has no element", stack.getSize() == 0);
         stack.push(item);
         assertTrue("The stack has one element", stack.getSize() == 1);
-
     }
 
     @Test
