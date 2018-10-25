@@ -35,10 +35,16 @@ public class ItemTest {
 
     @Test
     public void testPeek() {
+        SimpleStack stack = new Item();
+        Item item = new Item();
+        stack.push(item);
     }
 
     @Test
     public void testPop() {
+        SimpleStack stack = new Item();
+        Item item = new Item();
+        stack.push(item);
     }
 
     @Test(expected = EmptyStackException.class)
