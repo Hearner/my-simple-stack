@@ -1,34 +1,29 @@
 package deqo.qcha.mysimplestack;
 
-import java.util.EmptyStackException;
-import java.util.Stack;
+public class Item {
+    private Object value;
 
-public class Item implements SimpleStack {
-
-    private Stack stack = new Stack();
-
-    @Override
-    public boolean isEmpty() {
-        return stack.size() == 0;
+    /**
+     *
+     * @param value
+     */
+    Item(Object value) {
+        setValue(value);
     }
 
-    @Override
-    public int getSize() {
-        return stack.size();
+    /**
+     *
+     * @return
+     */
+    public Object getValue() {
+        return value;
     }
 
-    @Override
-    public void push(Item item) {
-        stack.push(item);
-    }
-
-    @Override
-    public Item peek() throws EmptyStackException {
-        return (Item) stack.peek();
-    }
-
-    @Override
-    public Item pop() throws EmptyStackException {
-        return (Item) stack.pop();
+    /**
+     *
+     * @param value
+     */
+    public void setValue(Object value) {
+        this.value = value;
     }
 }
