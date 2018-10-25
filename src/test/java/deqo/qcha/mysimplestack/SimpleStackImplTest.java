@@ -8,6 +8,9 @@ import static org.junit.Assert.*;
 
 public class SimpleStackImplTest {
 
+    /**
+     *
+     */
     @Test (expected = EmptyStackException.class)
     public void isEmptyExceptionTest() {
         SimpleStack stack = new SimpleStackImpl();
