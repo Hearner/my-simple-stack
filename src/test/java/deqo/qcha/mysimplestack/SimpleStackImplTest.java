@@ -1,10 +1,12 @@
 package deqo.qcha.mysimplestack;
 
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import java.util.EmptyStackException;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
 public class SimpleStackImplTest {
 
